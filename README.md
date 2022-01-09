@@ -25,3 +25,5 @@ const query = qs.stringify({
 ```
 
 5.没办法拿到数据的创建者`createdBy`字段，目前我没找到
+
+6.静态资源访问出错http--->https，资源出错 https://vercel.com/docs/cli#project-configuration/rewrites
