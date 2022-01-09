@@ -14,7 +14,7 @@ const getGeneral = async (addCollection) => {
     const collection = addCollection('General')
     const { data } = await axios.get(`${process.env.GRIDSOME_API_URL}/general?${query}`)
     const item = data.data
-    const cover = `${process.env.GRIDSOME_RESOURCE_URL}${item.attributes.cover.data.attributes.url}`
+    const cover = item.attributes.cover.data.attributes.url
     collection.addNode({
         id: item.id,
         title: item.attributes.title,

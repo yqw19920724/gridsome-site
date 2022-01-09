@@ -14,7 +14,7 @@ const getPost = async (addCollection) => {
     const collection = addCollection('Post')
     const { data } = await axios.get(`${process.env.GRIDSOME_API_URL}/posts?${query}`)
     data.data.forEach(item => {
-        const cover = `${process.env.GRIDSOME_RESOURCE_URL}${item.attributes.cover.data.attributes.url}`
+        const cover = item.attributes.cover.data.attributes.url
         const tags = item.attributes.tags.data.map(res => ({
             id: res.id,
             title: res.attributes.title
