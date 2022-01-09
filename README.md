@@ -27,3 +27,5 @@ const query = qs.stringify({
 5.没办法拿到数据的创建者`createdBy`字段，目前我没找到
 
 6.静态资源访问出错http--->https，资源出错 https://vercel.com/docs/cli#project-configuration/rewrites
+
+7.gridsome安装教程 https://gitee.com/lagoufed/fed-e-questions/blob/master/part2/%E4%B8%8B%E8%BD%BD%E5%8C%85%E6%98%AF%E5%87%BA%E9%94%99%E7%9A%84%E8%A7%A3%E5%86%B3%E6%96%B9%E5%BC%8F.md
